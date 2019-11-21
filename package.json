@@ -1,0 +1,26 @@
+{
+  "name": "caramoji",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --out-dir=public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "face-api.js": "^0.21.0",
+    "parcel": "^1.12.3",
+    "sass": "^1.23.6"
+  },
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  },
+  "staticFiles": {
+    "staticPath": "data",
+    "watcherGlob": "**"
+  }
+}
